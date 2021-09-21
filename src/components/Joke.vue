@@ -3,9 +3,8 @@
   <div class="joke-card">
     <div class="card-block">
       <!-- click="removeJoke(index) works too" -->
-      <button class="close" @click="removeJoke"><span>&times;</span></button>
-      <p><u>{{joke.setup}}</u></p>
-      <p><em>{{joke.punchline}}</em></p>
+      <!-- <p><u>{{joke.setup}}</u></p> -->
+      <p><em>{{joke.value}}</em></p>
     </div>
   </div>
 </div>
@@ -15,6 +14,6 @@
 import { mapActions } from "vuex";
 export default {
   props: ["joke", "index"],
-  methods: mapActions(["removeJoke"])
+  // methods: mapActions(["removeJoke"])
 };
 </script>
